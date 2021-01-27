@@ -1,4 +1,4 @@
-import Head from 'next/Head';
+import Head from 'next/head';
 import { Button, Code, Heading, Text } from '@chakra-ui/react';
 
 import { useAuth } from '@/lib/auth';

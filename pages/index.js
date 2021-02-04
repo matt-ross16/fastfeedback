@@ -4,6 +4,7 @@ import { Button, Code, Text, Icon, Flex } from '@chakra-ui/react';
 import { useAuth } from '@/lib/auth';
 import EmptyState from '@/components/EmptyState';
 
+
 const Home = () => {
   const auth = useAuth();
   return (

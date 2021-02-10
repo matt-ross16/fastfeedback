@@ -61,4 +61,5 @@ const DashboardShell = ({ children }) => {
     </Box>
   );
 };
+
 export default DashboardShell;

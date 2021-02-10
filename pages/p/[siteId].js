@@ -62,10 +62,10 @@ const SiteFeedback = ({ initialFeedback }) => {
     >
       {auth.user && (
         <Box as="form" onSubmit={onSubmit}>
-          <FormControl my={8} id="comment">
-            <FormLabel>Comment</FormLabel>
-            <Input ref={inputEl} type="comment" id="comment" />
-            <Button mt={2} type="submit" fontWeight="medium">
+          <FormControl my={8}>
+            <FormLabel htmlFor="comment">Comment</FormLabel>
+            <Input ref={inputEl} id="comment" placeholder="Leave a comment" />
+            <Button mt={4} type="submit" fontWeight="medium">
               Add Comment
             </Button>
           </FormControl>

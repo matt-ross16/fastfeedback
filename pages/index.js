@@ -2,11 +2,10 @@ import Head from 'next/head';
 import { Button, Code, Text, Icon, Flex } from '@chakra-ui/react';
 
 import { useAuth } from '@/lib/auth';
-import EmptyState from '@/components/EmptyState';
-
 
 const Home = () => {
   const auth = useAuth();
+
   return (
     <Flex
       as="main"
@@ -18,11 +17,13 @@ const Home = () => {
       <Head>
         <title>Fast Feedback</title>
       </Head>
+
       <Icon color="black" name="logo" size="64px" />
       {auth.user ? (
-        <EmptyState />
+        <Button as="a" href="/dashboard">
+          View Dashboard
+        </Button>
       ) : (
-        // <Button onClick={(e) => auth.signout()}>Sign Out</Button>
         <Button mt={4} size="sm" onClick={(e) => auth.signinWithGitHub()}>
           Sign In
         </Button>

@@ -81,4 +81,4 @@ const FeedbackPage = ({ initialFeedback }) => {
   );
 };
 
-export default SiteFeedback;
+export default FeedbackPage;

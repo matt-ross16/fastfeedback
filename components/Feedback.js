@@ -7,7 +7,7 @@ const Feedback = ({ author, text, createdAt }) => (
     <Heading size="sm" as="h3" mb={0} color="gray.900" fontWeight="medium">
       {author}
     </Heading>
-    <Text color="gray.900" mb={4} fontSize="xs">
+    <Text color="gray.500" mb={4} fontSize="xs">
       {format(parseISO(createdAt), 'PPpp')}
     </Text>
     <Text color="gray.800">{text}</Text>

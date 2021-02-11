@@ -14,6 +14,7 @@ const GlobalStyle = ({ children }) => {
             min-width: 360px;
             scroll-behavior: smooth;
           }
+
           #__next {
             display: flex;
             flex-direction: column;
